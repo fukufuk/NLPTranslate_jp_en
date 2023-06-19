@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link href="/static/pastWork.css" rel="stylesheet">
+	<title>PAST_WORK / Translate practice</title>
+</head>
+
+<body>
+    <form method="POST" action="/go_home">
+        <input class="home_button" type="submit" value="> NEW WORK">
+    </form>
+
+    <form method="POST" action="/del_text">
+        <table class="result">
+            <thead>
+                <tr>
+                    <td class="emp"></td>
+                    <td class="column_name">日本語の原文</td>
+                    <td class="column_name">Your Translation</td>
+                    <td class="column_name">Computer Translation</td>
+                    <td class="column_name">Similarity(%)</td>
+                </tr>
+            </thead>
+            <tbody>
+                % for tex in text_list:
+                <tr>
+                    <td  class="emp"><input type="checkbox" name="complete" value="{{tex[1]}}"></td>
+                    <td>{{tex[0]}}</td>
+                    <td>{{tex[1]}}</td>
+                    <td>{{tex[2]}}</td>
+                    <td>{{tex[3]}}</td>
+                </tr>
+                % end
+            </tbody>
+        </table>
+        
+        <input class='home_button delete_button' type="submit" value=">DELETE CHECKED ACTIVITY">
+    </form>
+</body>
+
+</html>

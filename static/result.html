@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link href="/static/result.css" rel="stylesheet">
+	<title>RESULT / Translate Practice</title>
+</head>
+
+<body>
+    <h1>{{result_text}}</h1>
+    <h1>Similarity is {{similarity}}%!</h1>
+    <img src="/static/photo/result_picture.png">
+    <h2>{{advice}}</h2>
+    <details>
+        <summary>日本語の原文</summary>
+        <p>{{jpText}}</p>
+    </details>
+    <details>
+        <summary>Your Translate</summary>
+        <p>{{engText}}</p>
+    </details>
+    <details>
+        <summary>Computer Translate</summary>
+        <p>{{engTrans}}</p>
+    </details>
+
+    <form method="POST" action="/go_home">
+        <input type="submit" value="> NEXT WORK">
+    </form>
+    <form method="GET" action="/go_past">
+        <input class="past_button" type="submit" value="> PAST WORK">
+    </form>
+</body>
+
+</html>

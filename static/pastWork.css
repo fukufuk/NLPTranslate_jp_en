@@ -1,0 +1,45 @@
+body {
+    position: relative;
+    width: 65%;
+    min-height: 100vh;
+    background: url('photo/background_past.png')
+      center / cover;
+}
+
+.home_button{
+    position:absolute;
+    margin-top: 1%;
+    margin-left: 120%;
+    font-size: 30px;
+    background-color: #ffffff00;
+    color: #000000;
+    padding: 8px;
+    border:none;
+    transition: color 0.5s ease;
+    font-weight:bold;
+}
+
+.home_button:hover{
+    color: #00000072;
+}
+
+table{
+    position: absolute;
+    margin-top: 400px;
+    margin-left: 10%;
+    width: 120%;
+}
+
+.column_name{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.delete_button{
+    color: #0000004a;
+    border-bottom: solid;
+    position: absolute;
+    margin-top: 330px;
+    margin-left: 10%;
+    font-size: 20px;
+}

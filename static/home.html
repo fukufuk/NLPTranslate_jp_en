@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link href="/static/home.css" rel="stylesheet">
+	<title>HOME / Translate practice</title>
+</head>
+
+<body>
+    <form name="addText" method="POST" action="/add_Text" >
+        <table>
+            <thead>
+                <tr>
+                    <td class="box_word">>日本語</td>
+                </tr>
+                <tr class="input_box">
+                    <td class="input_table"><input class="input_box" type="text" name="JapaneseText" required /></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="box_word">>English</td>
+                </tr>       
+                <tr>
+                    <td class="input_table"><input class="input_box" type="text" name="EnglishText" required /></td>  
+                </tr>
+            </tbody>
+        </table>
+        <input class="addB" type="submit" value="CHECK >" />
+    </form>
+    <form method="GET" action="/go_past">
+        <input class="past_button" type="submit" value="> PAST WORK">
+    </form>
+</body>
+
+</html>
