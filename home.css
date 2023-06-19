@@ -1,0 +1,72 @@
+body {
+    position: relative;
+    width: 65%;
+    min-height: 100vh;
+    background: url('photo/background_home.png')
+      center / cover;
+}
+
+table{
+    position:absolute;
+    margin-top: 40%;
+    margin-left: 10%;
+    border-collapse:  collapse;
+    width:95%;
+}
+
+.box_word{
+    text-align: center;
+    font-weight:bold;
+}
+
+
+
+.input_box{
+    box-sizing: border-box;
+    width:100%;
+    height:150px
+}
+
+
+.input_box[type="text"] {
+    text-align: start;
+    font-size: 20px;
+}
+
+td {
+    border: 1px solid black;
+}
+
+.addB{
+    position:absolute;
+    margin-top: 68%;
+    margin-left: 110%;
+    font-size: 50px;
+    background-color: #ffffff00;
+    color: #000000;
+    padding: 8px;
+    border:none;
+    transition: color 0.5s ease;
+    font-weight:bold;
+}
+
+.addB:hover{
+    color: #00000072;
+}
+
+.past_button{
+    position:absolute;
+    margin-left: 120%;
+    margin-top: 5%;
+    font-size: 40px;
+    background-color: #ffffff00;
+    color: #000000;
+    padding: 8px;
+    border:none;
+    transition: color 0.5s ease;
+    font-weight:bold;
+}
+
+.past_button:hover{
+    color: #00000072;
+}
